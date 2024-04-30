@@ -1,0 +1,26 @@
+# CSI Data Processing Tools
+
+This project includes three Python scripts for handling Wi-Fi CSI datasets.
+
+## 1. pcap to npy
+
+- **File Name:** `1.py`
+- **Functionality:** Converts .pcap files to .npy format for continuous CSI data.
+- **Usage:** Run `python 1.py input.pcap output.npy`, where `input.pcap` is the input pcap file path and `output.npy` is the output npy file path.
+
+## 2. Continuous Data Splitting
+
+- **File Name:** `2.py`
+- **Functionality:** Splits continuous npy files into multiple small files with a specified interval.
+- **Usage:** Run `python 2.py input.npy output_dir interval`, where `input.npy` is the input npy file path, `output_dir` is the output directory path, and `interval` is the splitting interval (in milliseconds).
+
+## 3. Dataset Partitioning
+
+- **File Name:** `3.py`
+- **Functionality:** Divides the dataset into training and testing sets according to a specified ratio.
+- **Usage:** Run `python 3.py dataset_dir train_ratio`, where `dataset_dir` is the dataset directory path and `train_ratio` is the ratio of the dataset to be used for training (e.g., 0.8 means 80% of the data for training, 20% for testing).
+
+## Dataset Download
+
+You can download the Wi-Fi based personnel identity recognition CSI dataset from [IEEE DataPort](https://ieee-dataport.org/documents/csi-dataset-wi-fi-based-personnel-identity-recognition).
+
